@@ -23,6 +23,7 @@ public class BinaryGenerator {
     }
 
     public String convertNormalStringToBinaryString() {
+        StringBuilder stringBuilder = new StringBuilder();
         return "";
     }
 }
