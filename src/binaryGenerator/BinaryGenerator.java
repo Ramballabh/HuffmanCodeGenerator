@@ -27,6 +27,7 @@ public class BinaryGenerator {
         for (int i = 0; i <userInputStringInLowerCase.length() ; i++) {
             int a = userInputStringInLowerCase.charAt(i);
             String string = Integer.toBinaryString(a);
+            String zero="0";
 
         }
         return "";
