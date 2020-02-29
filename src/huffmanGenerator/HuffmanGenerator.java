@@ -55,8 +55,11 @@ public class HuffmanGenerator {
         int m=0;
         StringBuilder stringBuilder=new StringBuilder();
         for(char ch1:userInputStringInLowerCase.toCharArray()) {
+            for (char ch : map.keySet()) {
 
-        }
+            }
+
+            }
 
             return "";
     }
