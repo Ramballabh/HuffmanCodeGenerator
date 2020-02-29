@@ -24,7 +24,7 @@ public class HuffmanGenerator {
         this.userInputStringInLowerCase = userInputStringInLowerCase;
     }
 
-    public String convertNormalStringToHuffmanString() {
+    public StringBuilder convertNormalStringToHuffmanString() {
         HashMap<Character,String> map=new HashMap<>();
         map.put('a',"1010");
         map.put('b',"100000");
@@ -56,11 +56,13 @@ public class HuffmanGenerator {
         StringBuilder stringBuilder=new StringBuilder();
         for(char ch1:userInputStringInLowerCase.toCharArray()) {
             for (char ch : map.keySet()) {
-
+                if (ch1 == ch) {
+                    stringBuilder.append(map.get(ch));
+                    break;
+                }
             }
+        }
 
-            }
-
-            return "";
+            return stringBuilder;
     }
 }
