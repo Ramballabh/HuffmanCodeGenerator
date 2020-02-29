@@ -28,7 +28,7 @@ public class BinaryGenerator {
             int a = userInputStringInLowerCase.charAt(i);
             String string = Integer.toBinaryString(a);
             String zero="0";
-
+            stringBuilder.append(zero.repeat(8-string.length()));
         }
         return "";
     }
