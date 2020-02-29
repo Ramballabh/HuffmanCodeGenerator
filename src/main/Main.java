@@ -19,7 +19,7 @@ public class Main {
         String userInput = scanner.nextLine().trim();
         userInput.toLowerCase();
         BinaryGenerator binaryGenerator = new BinaryGenerator(userInput);
-        String binaryString = binaryGenerator.convertNormalStringToBinaryString();
+        StringBuilder binaryString = binaryGenerator.convertNormalStringToBinaryString();
         HuffmanGenerator huffmanGenerator = new HuffmanGenerator(userInput);
         String huffmanString = huffmanGenerator.convertNormalStringToHuffmanString();
         int lengthOfBinaryString = binaryString.length();
